@@ -1,13 +1,6 @@
-.footer {
-    margin-top: 1.875rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #B0DFEA;
-
-    &__container {
-        padding: 20px;
-    }
+header {
+    width: 100vw;
+    background-color: #ecf5fd;
 }
 
 .navigation {
@@ -17,10 +10,19 @@
 }
 
 .logo {
-    margin-right: 50px;
+    margin-right: 40px;
+    width: 40px;
+
+    @include tablet {
+        margin-right: 50px;
+        width: 60px;
+    }
+
+    @include desktop {
+        margin-right: 60px;
+        width: 80px;
+    }
 }
-
-
 
 .menu {
     display: flex;
@@ -29,6 +31,16 @@
     gap: 30px;
 
     list-style: none;
+
+    @include tablet {
+        gap: 40px;
+    }
+
+    @include desktop {
+        gap: 50px;
+    }
+
+
 }
 
 .menu__item {
@@ -38,9 +50,9 @@
     align-items: center;
     justify-content: center;
 
-    width: 2.125rem;
-    height: 2.125rem;
-    border-radius: 3.125rem;
+    width: calc($index * $side);
+    height: calc($index * $side);
+    border-radius: 50%;
 
     border: none;
     outline: none;
@@ -48,7 +60,6 @@
     cursor: pointer;
 
     background-color: transparent;
-
     box-shadow: -0.025rem -0.025rem .1125rem #fff, .1875rem .1875rem .3125rem rgba(0, 0, 0, 0.1);
 
     &:hover {
@@ -57,7 +68,7 @@
 
     &:hover > .menu__link {
         color: #6ed2f6;
-        filter: drop-shadow(.0625rem .0625rem .0625rem #fff);
+        filter: drop-shadow(0rem .0313rem .0313rem #20496a) drop-shadow(.0313rem .0313rem .0313rem rgb(255, 255, 255));
     }
 
     &:active {
@@ -68,9 +79,21 @@
 }
 
 .menu__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
     color: #20496a;
 }
 
 .menu__link > i {
     transition: 0.2s;
+
+    @include tablet {
+        font-size: 20px;
+    }
+
+    @include desktop {
+        font-size: 30px;
+    }
 }

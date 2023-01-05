@@ -4,10 +4,9 @@
     align-items: center;
     justify-content: center;
 
-    width: 100%;
+    width: 100vw;
     height: 100%;
 
-    // background-image: linear-gradient(to top, #fff, transparent), url(../images/bg.jpg);
     overflow: hidden;
 
     &::before {
@@ -18,12 +17,11 @@
         z-index: 1000;
 
         width: 100%;
-        height: 200px;
+        height: 12.5rem;
 
         background: linear-gradient(to top, #fff, transparent);
     }
 }
-
 
 .hero-mountains__man {
     top: inherit;
@@ -33,5 +31,7 @@
 .hero-montains__text {
     position: relative;
     color: #fff;
-    font-size: 4rem;
+    text-shadow: .125rem .125rem .125rem #20496a;
+    filter: drop-shadow(0rem .0313rem .0313rem #20496a) drop-shadow(.0313rem .0313rem .0313rem rgb(167, 244, 237));
+    font-size: calc($index * 6.2);
 }
