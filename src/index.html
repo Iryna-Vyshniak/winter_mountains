@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Mountain</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js" defer></script>
   </head>
 
   <body>
@@ -49,8 +48,81 @@
           id="mountain_right"
         />
       </section>
+      <header class="header">
+        <div class="container header__container">
+          <nav class="navigation header__navigation">
+            <a href="./index.html">
+              <img
+                src="./images/mountain-logo.png"
+                alt="logo"
+                class="logo header__logo"
+                width="40"
+                height="auto"
+              />
+            </a>
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <i
+                    class="fa-xs fa-solid fa-house fa-fade"
+                    style="--fa-animation-duration: 5s"
+                  ></i>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <i class="fa-xs fa-solid fa-mountain-sun"></i>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <i class="fa-xs fa-solid fa-person-hiking"></i>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <i class="fa-xs fa-solid fa-people-group fa"></i>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <i
+                    class="fa-xs fa-sm fa-solid fa-cog fa-spin"
+                    style="--fa-animation-duration: 20s"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
       <section class="about" id="about">
         <div class="container about__container">
+          <img
+            src="./images/clouds_1.png"
+            alt="Clouds"
+            class="hero-montains__clouds"
+            id="clouds_1"
+          />
+          <img
+            src="./images/clouds_2.png"
+            alt="Clouds"
+            class="hero-montains__clouds"
+            id="clouds_2"
+          />
+          <img
+            src="./images/clouds_1.png"
+            alt="Clouds"
+            class="hero-montains__clouds-3"
+            id="clouds_3"
+          />
+          <img
+            src="./images/clouds_2.png"
+            alt="Clouds"
+            class="hero-montains__clouds-4"
+            id="clouds_4"
+          />
           <h2 class="about__title">
             Welcome <br />
             to the Gorgeus Mountains
@@ -75,59 +147,21 @@
             </p>
           </div>
         </div>
+        <div class="sound paused">
+          <img src="./images/sound.gif" alt="sound" class="sound-btn" />
+          <audio
+            src="./media/Rocky Mountain High.mp3"
+            class="audio"
+            loop
+          ></audio>
+        </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container footer__container">
-        <nav class="navigation footer__navigation">
-          <a href="./index.html">
-            <img
-              src="./images/mountain-logo.png"
-              alt="logo"
-              class="logo footer__logo"
-              width="60"
-              height="auto"
-            />
-          </a>
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <i
-                  class="fa-sm fa-solid fa-house fa-fade"
-                  style="--fa-animation-duration: 5s"
-                ></i>
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <i class="fa-solid fa-mountain-sun"></i>
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <i class="fa-solid fa-person-hiking"></i>
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <i class="fa-solid fa-people-group fa"></i>
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">
-                <i
-                  class="fa-sm fa-solid fa-cog fa-spin"
-                  style="--fa-animation-duration: 20s"
-                ></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
+
     <script
       src="https://kit.fontawesome.com/bd3e78b64a.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
