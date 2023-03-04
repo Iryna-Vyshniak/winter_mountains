@@ -17,10 +17,8 @@ main {
 }
 
 .container {
-    padding-right: .9375rem;
-    padding-left: .9375rem;
-    margin-left: auto;
-    margin-right: auto;
+    padding-inline: .9375rem;
+    margin-inline: auto;
 
     @include mobile {
         width: $mobile;
